@@ -7,11 +7,14 @@ public class Triangle extends Shape implements Scalable{
             this.side2 = side2;
             this.side3 = side3;
  }
+
+ //Print message that the traiangle is being drawn
  @Override
     public void draw() {
         System.out.println ("Drawing a Triangle with sides equal to " +  side1 + " , " + side2 + " and " + side3 );
     }
 
+// Scale all sides by factor
  @Override
  public void scale (double factor) {
     side1 = side1 * factor;
@@ -19,6 +22,8 @@ public class Triangle extends Shape implements Scalable{
     side3 = side3 * factor;
 }
 
+
+//Return a string representation of the triangle
 @ Override
         public String toString () {
             return ("Triangle with sides equal to " +  side1 + " , " + side2 + " and " + side3 );
